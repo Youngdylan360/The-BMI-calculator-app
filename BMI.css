@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.bmi-calculator {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+}
+
+.bmi-inputs {
+    width: 23rem;
+    height: 24rem;
+    background-color: #c0c0c0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    border-radius: 10px;
+    padding-top: 4.1rem;
+    padding-bottom: 4.1rem;
+}
+
+.step-up-0 {
+    height: 24.5rem;
+}
+
+.step-up-1 {
+    height: 25rem;
+}
+
+.step-up-2 {
+    height: 25.5rem;
+}
+
+.step-up-3 {
+    height: 26rem;
+}
+
+
+.result-section {
+    width: 90%;
+    height: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.result-display {
+    width: 98.8%;
+    height: 3rem;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 5px;
+    padding-top: 1.8rem;
+    /* padding-left: 20%; */
+}
+
+.age-input-field {
+    width: 40%;
+    height: 2.5rem;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 5px;
+    padding: 0 10px;
+}
+
+.gender-selection {
+    display: flex;
+    gap: 2rem;
+}
+
+.height-selector, .weight-selector {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.height-input, .weight-input {
+    width: 60%;
+    height: 2.5rem;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 5px;
+    padding: 0 10px;
+}
+
+.weight-warning, .gender-warning, .height-warning, .age-warning {
+    color: #a11616;
+}
+
+.button-section {
+    display: flex;
+    gap: 24px;
+}
+
+.calculate-btn {
+    width: 7rem;
+    height: 2.5rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.clear-btn {
+    width: 4rem;
+    height: 2.5rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.calculate-btn:hover, .clear-btn:hover {
+    background-color: #4CAF50;
+    color: white;
+    box-shadow: 0 4px 8px #00000033;
+}
+
+.calculate-btn:active, .clear-btn:active {
+    transform: scale(0.98);
+}
+
+.result-display:focus, .age-input-field:focus, .height-input:focus, .weight-input:focus {
+    outline: none;
+    box-shadow: 0 0 5px #4CAF50;
+}

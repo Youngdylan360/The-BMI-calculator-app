@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="BMI.css">
+</head>
+<body>
+
+    <div class="bmi-calculator">
+        <div class="bmi-inputs js-bmi-input">
+
+            <div class="result-section">
+                <input type="text" class="result-display js-result-display" name="result">
+            </div>
+
+            <div class="js-age-selector">
+                <div>
+                    <label for="age">Age</label>
+                    <input type="number" name="user-age" id="age" placeholder="Age" max="120" min="1" class="age-input-field  js-age-input-field">  
+                    <span class="js-age-span">ages: 2 - 120</span>
+                </div>
+
+                <p class="js-age-warning"></p>
+            </div>
+
+            <div class="js-gender-selection">
+                <div class="gender-selection">
+                    <div>
+                        <input type="radio" name="gender" id="male" value="M" class="gender js-gender" 
+                        data-gender="M">
+                        <label for="male" class="gender-label">Male</label>
+                    </div>
+
+                    <div>
+                        <input type="radio" name="gender" id="female" value="F" class="gender js-gender" data-gender="F">
+                        <label for="Female">Female</label>
+                    </div>
+                </div>
+
+                <div class="js-gender-warning"></div>
+            </div>
+
+            <div class="js-height-selector">
+                <div class="height-selector">
+                    <label for="height">Height</label>
+                    <input type="number" name="user-height" id="height" placeholder="Height in cm" max="3.0" min="0.5" class="height-input js-height-input">
+                </div>
+                <div class="js-height-warning">
+                    <!-- <p class="js-height-warning"></p> -->
+                </div>
+            </div>
+
+            <div class="js-weight-selector">
+                <div class="weight-selector">
+                    <label for="weight">Weight</label>
+                    <input type="number" name="user-weight" id="weight" placeholder="Weight in kg" max="500" min="10" class="weight-input js-weight-input">
+                </div>
+                <p class="js-weight-warning"></p>
+            </div>
+
+            <div class="button-section">
+                <button class="calculate-btn js-calculate-btn">Calculate BMI</button>
+                <button class="clear-btn js-clear-btn">Clear</button>
+            </div>
+        </div>
+    </div>
+    <script src="BMI.js"></script>
+    
+</body>
+</html>
