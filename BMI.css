@@ -16,8 +16,8 @@
 }
 
 .bmi-inputs {
-    width: 23rem;
-    height: 28rem;
+    width: 25rem;
+    height: 27rem;
     background-color: #c0c0c0;
     display: flex;
     flex-direction: column;
@@ -137,3 +137,4 @@
     box-shadow: 0 0 5px #4CAF50;
 
 }
+
